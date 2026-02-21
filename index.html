@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sizuka’s Secret | Your Skincare Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-pink: #ff85a2;
+            --soft-pink: #fce4ec;
+            --dark-gray: #4a4a4a;
+            --accent: #f06292;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffafb;
+            color: var(--dark-gray);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-pink);
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        header {
+            background-color: var(--soft-pink);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            color: var(--accent);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--dark-gray);
+        }
+
+        /* Cards Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+            transition: 0.3s;
+            border: 1px solid #f1f1f1;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 133, 162, 0.2);
+        }
+
+        .card-img {
+            height: 200px;
+            background-color: #eee;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-tag {
+            font-size: 12px;
+            background: var(--soft-pink);
+            color: var(--accent);
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--primary-pink);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            border-top: 1px solid #f1f1f1;
+            margin-top: 80px;
+        }
+
+        footer p {
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">Sizuka’s Secret</a>
+        <div class="menu">
+            <span style="font-size: 0.9rem; color: #888;">Beauty | Routine | Guide</span>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Sizuka’s Secret</h1>
+        <p>আপনার ত্বকের যত্নে আমরা আছি আপনার পাশে।</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">স্কিনকেয়ার গাইডসমূহ</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=500&q=60');"></div>
+                <div class="card-content">
+                    <span class="card-tag">Daily Routine</span>
+                    <h3>সকাল ও রাতের ত্বকের যত্ন</h3>
+                    <p>সুস্থ ত্বকের জন্য একটি পারফেক্ট ডেইলি রুটিন কতটা জরুরি এবং কীভাবে শুরু করবেন জানুন এখানে।</p>
+                    <a href="#" class="read-more">বিস্তারিত পড়ুন →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=500&q=60');"></div>
+                <div class="card-content">
+                    <span class="card-tag">Ingredients</span>
+                    <h3>উপাদানের কাজ কী?</h3>
+                    <p>হায়ালুরোনিক অ্যাসিড নাকি ভিটামিন সি? আপনার ত্বকের জন্য কোনটি সবচেয়ে বেশি কার্যকর?</p>
+                    <a href="#" class="read-more">বিস্তারিত পড়ুন →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=500&q=60');"></div>
+                <div class="card-content">
+                    <span class="card-tag">Skin Type</span>
+                    <h3>স্কিন টাইপ চিনুন</h3>
+                    <p>আপনার ত্বক অয়েলি, ড্রাই নাকি কম্বিনেশন? আপনার ত্বক অনুযায়ী সঠিক পণ্য বেছে নিন।</p>
+                    <a href="#" class="read-more">বিস্তারিত পড়ুন →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sizuka World. All Rights Reserved.</p>
+        <p>Managed by PlayX Nobita Team | Powered by Berry Bot Concept</p>
+    </footer>
+
+</body>
+</html>
