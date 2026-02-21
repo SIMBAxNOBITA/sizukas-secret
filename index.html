@@ -42,26 +42,47 @@
             text-decoration: none;
         }
 
-        /* Hero Section */
+        /* Hero Section with Owner Info */
         header {
             background-color: var(--soft-pink);
-            padding: 80px 20px;
+            padding: 60px 20px;
             text-align: center;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
         }
 
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .owner-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 10px 20px rgba(255, 133, 162, 0.3);
+            object-fit: cover;
+        }
+
         header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            margin: 0;
+            font-size: 3rem;
+            margin: 10px 0 0 0;
             color: var(--accent);
         }
 
-        header p {
-            font-size: 1.2rem;
-            color: #777;
-            margin-top: 10px;
+        .owner-tag {
+            background: white;
+            color: var(--accent);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 5px;
+            display: inline-block;
         }
 
         .container {
@@ -140,7 +161,6 @@
             font-weight: 600;
         }
 
-        /* Footer */
         footer {
             background: #fff;
             padding: 50px 20px;
@@ -165,12 +185,18 @@
     </nav>
 
     <header>
-        <h1>Sizuka’s Secret</h1>
-        <p>আপনার ত্বকের যত্নে আমরা আছি আপনার পাশে।</p>
+        <div class="profile-container">
+            <img src="profile.jpg" alt="Mominul Hasan Srabon" class="owner-img">
+            <div>
+                <h1>Sizuka’s Secret</h1>
+                <span class="owner-tag">Founder: Mominul Hasan Srabon</span>
+                <p>আমাদের সাথে জানুন আপনার ত্বকের গোপন রহস্য।</p>
+            </div>
+        </div>
     </header>
 
     <div class="container">
-        <h2 class="section-title">স্কিনকেয়ার গাইডসমূহ</h2>
+        <h2 class="section-title">স্কিনকেয়ার গাইডসমূহ</h2>
         
         <div class="grid">
             <div class="card">
@@ -179,7 +205,7 @@
                     <span class="card-tag">Daily Routine</span>
                     <h3>সকাল ও রাতের ত্বকের যত্ন</h3>
                     <p>সুস্থ ত্বকের জন্য একটি পারফেক্ট ডেইলি রুটিন কতটা জরুরি এবং কীভাবে শুরু করবেন জানুন এখানে।</p>
-                    <a href="#" class="read-more">বিস্তারিত পড়ুন →</a>
+                    <a href="#" class="read-more">বিস্তারিত পড়ুন →</a>
                 </div>
             </div>
 
@@ -188,8 +214,8 @@
                 <div class="card-content">
                     <span class="card-tag">Ingredients</span>
                     <h3>উপাদানের কাজ কী?</h3>
-                    <p>হায়ালুরোনিক অ্যাসিড নাকি ভিটামিন সি? আপনার ত্বকের জন্য কোনটি সবচেয়ে বেশি কার্যকর?</p>
-                    <a href="#" class="read-more">বিস্তারিত পড়ুন →</a>
+                    <p>হায়ালুরোনিক অ্যাসিড নাকি ভিটামিন সি? আপনার ত্বকের জন্য কোনটি সবচেয়ে বেশি কার্যকর?</p>
+                    <a href="#" class="read-more">বিস্তারিত পড়ুন →</a>
                 </div>
             </div>
 
@@ -198,8 +224,8 @@
                 <div class="card-content">
                     <span class="card-tag">Skin Type</span>
                     <h3>স্কিন টাইপ চিনুন</h3>
-                    <p>আপনার ত্বক অয়েলি, ড্রাই নাকি কম্বিনেশন? আপনার ত্বক অনুযায়ী সঠিক পণ্য বেছে নিন।</p>
-                    <a href="#" class="read-more">বিস্তারিত পড়ুন →</a>
+                    <p>আপনার ত্বক অয়েলি, ড্রাই নাকি কম্বিনেশন? আপনার ত্বক অনুযায়ী সঠিক পণ্য বেছে নিন।</p>
+                    <a href="#" class="read-more">বিস্তারিত পড়ুন →</a>
                 </div>
             </div>
         </div>
@@ -207,28 +233,19 @@
 
     <footer>
         <p>&copy; 2026 Sizuka World. All Rights Reserved.</p>
-        <p>Managed by PlayX Nobita Team | Powered by Berry Bot Concept</p>
+        <p>Managed by <strong>Mominul Hasan Srabon</strong> | Chief Advisor of Element-7</p>
     </footer>
-<div class="container">
-    <div style="background: white; border-radius: 20px; padding: 40px; text-align: center; box-shadow: 0 10px 30px rgba(255,133,162,0.1); border: 1px solid var(--soft-pink);">
-        <h2 class="section-title">Meet the Founder</h2>
+<header>
+    <div style="text-align: center; padding: 20px;">
+        <img src="profile.jpg" alt="Mominul Hasan Srabon" 
+             style="width: 150px; height: 150px; border-radius: 50%; border: 5px solid #fff; 
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.2); object-fit: cover; margin-bottom: 15px;">
         
-        <img src="profile.jpg" alt="Mominul Hasan Srabon" style="width: 180px; height: 180px; border-radius: 50%; border: 5px solid var(--primary-pink); object-fit: cover; margin-bottom: 20px;">
-        
-        <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin: 0;">Mominul Hasan Srabon</h3>
-        <p style="color: var(--accent); font-weight: 600; margin-top: 5px;">Founder & Chief Advisor, Element-7</p>
-        
-        <p style="max-width: 700px; margin: 20px auto; color: #666; line-height: 1.8;">
-            আসসালামু আলাইকুম! আমি MOMINUL HASAN SRABON । 
-            আমার লক্ষ্য হলো সঠিক তথ্যের মাধ্যমে আপনাদের ত্বকের যত্নে সাহায্য করা। আমি বিশ্বাস করি, সঠিক গাইডলাইন থাকলে যে কেউ তার ত্বকের সেরা যত্ন নিতে পারে।
-        </p>
-
-        <div style="margin-top: 25px;">
-            <a href="#" style="text-decoration: none; background: var(--primary-pink); color: white; padding: 10px 25px; border-radius: 50px; font-weight: bold;">Contact Me</a>
-        </div>
+        <h1>Sizuka’s Secret</h1>
+        <p style="font-weight: 600; color: #f06292;">Owner: Mominul Hasan Srabon</p>
+        <p>Founder & Chief Advisor, Element-7</p>
+        <p>আপনার ত্বকের যত্নে আমরা আছি আপনার পাশে।</p>
     </div>
-</div>
+</header>
 </body>
-
 </html>
-
